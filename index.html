@@ -46,10 +46,57 @@
             </td>
           </tr>
         </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+          <td style="padding:20px;width:100%;vertical-align:middle">
+            <heading>Graduate Thesis</heading>
+          </td>
+        </tr>
+      </tbody></table>
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      
+        <tr onmouseout="Thesis_stop()" onmouseover="Thesis_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='thesis'>
+              <img src="images/graduate_thesis.png" width="160"></div>
+              <img src='images/graduate_thesis.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function Thesis_start() {
+                document.getElementById('thesis').style.opacity = "1";
+              }
+
+              function Thesis_stop() {
+                document.getElementById('thesis').style.opacity = "0";
+              }
+              Thesis_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="data/Graduate_Thesis.pdf">
+              <papertitle>Graduate Thesis: Domain Robust Medical Image Segmentation</papertitle>
+            </a>
+            <br>
+            <strong>Changjie Lu</strong>
+            <br>
+            <em>Defend this thesis at <font color="red">junior</font> year</em> <font color="red"><strong>(Best Oral Presentation)
+            </strong></font>
+            <br>
+            <a href="data/Graduate_Thesis.pdf">Paper</a>
+            <p></p>
+          </td>
+        </tr>
+
+
+
+
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
+              <heading>Publication</heading>
               <p>
                 I'm interested in medical imaging, computer vision, optimization, reinforcement learning.
               </p>
@@ -57,49 +104,7 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-
-          <tr onmouseout="ACML_stop()" onmouseover="ACML_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='acml'>
-                <img src="images/acml.JPG" width="160"></div>
-                <img src='images/acml.JPG' width="160">
-              </div>
-              <script type="text/javascript">
-                function ACML_start() {
-                  document.getElementById('acml').style.opacity = "1";
-                }
-
-                function ACML_stop() {
-                  document.getElementById('acml').style.opacity = "0";
-                }
-                UDA_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-							<a href="data/ACML_Paper.pdf">
-                <papertitle>AS-IntroVAE: Adversarial Similarity Distance Makes Robust IntroVAE</papertitle>
-              </a>
-              <br>
-              <strong>Changjie Lu</strong>, 
-              Shen Zheng, 
-              Zirui Wang,
-              Omar Dib,
-              Gaurav Gupta
-              <br>
-              <em>ACML</em>, 2022 Underreview
-              <br>
-							<!-- <a href="">code</a> / -->
-              <a href="data/ACML_Paper.pdf">paper</a> /
-              <a href="data/ACML_Paper_Supp.pdf">supp</a> /
-              <a href="data/ACML_arxiv__ppt_.pdf">slides</a>
-              <!-- <a href="data/CVPR_2022_slides.pdf">slides</a> / 	 -->
-              <p></p>
-            </td>
-          </tr>
-
-
+      
           <tr onmouseout="UDA_stop()" onmouseover="UDA_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -137,6 +142,50 @@
               <p></p>
             </td>
           </tr>
+
+          <tr onmouseout="ACML_stop()" onmouseover="ACML_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='acml'>
+                <img src="images/acml.JPG" width="160"></div>
+                <img src='images/acml.JPG' width="160">
+              </div>
+              <script type="text/javascript">
+                function ACML_start() {
+                  document.getElementById('acml').style.opacity = "1";
+                }
+
+                function ACML_stop() {
+                  document.getElementById('acml').style.opacity = "0";
+                }
+                UDA_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+							<a href="data/ACML_Paper.pdf">
+                <papertitle>AS-IntroVAE: Adversarial Similarity Distance Makes Robust IntroVAE</papertitle>
+              </a>
+              <br>
+              <strong>Changjie Lu</strong>, 
+              Shen Zheng, 
+              Zirui Wang,
+              Omar Dib,
+              Gaurav Gupta
+              <br>
+              <em>ACML</em>, 2022 Underreview
+              <br>
+              The Project for Graduate Level Course: Advanced AI
+              <br>
+							<!-- <a href="">code</a> / -->
+              <a href="data/ACML_Paper.pdf">paper</a> /
+              <a href="data/ACML_Paper_Supp.pdf">supp</a> /
+              <a href="data/ACML_arxiv__ppt_.pdf">slides</a>
+              <!-- <a href="data/CVPR_2022_slides.pdf">slides</a> / 	 -->
+              <p></p>
+            </td>
+          </tr>
+
+
 					
           <tr onmouseout="tetci_stop()" onmouseover="tetci_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -167,6 +216,8 @@
               Naina Bandyopadhyay, Manoj Kumar, Gaurav Gupta
               <br>
 							<em>TETCI</em>, 2022 Underreview
+              <br>
+              The Internship Work with Findability Science.
               <br>
               <a href="https://github.com/LOUEY233/Functional-Optimization-Reinforcement-Learning-for-Real-Time-Bidding">code</a> /
               <a href="data/Functional_Optimization_Reinforcement_Learning.pdf">paper</a>
